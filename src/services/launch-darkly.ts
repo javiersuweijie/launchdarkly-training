@@ -1,15 +1,11 @@
-
-export interface IUserInterface {
-    key: string
-}
+import LaunchDarklyClient, { LDUser, LDClient } from 'launchdarkly-node-server-sdk';
 
 export interface ILaunchDarklyService {
-    initialize(): Promise<undefined>;
-    getVariation(flagName: string, user: IUserInterface, defaultValue: boolean): Promise<boolean>;
+    getVariation(flagName: string, user: LDUser, defaultValue: boolean): Promise<boolean>;
 }
 
 export class LaunchDarklyService implements ILaunchDarklyService {
-    private launchDarklyClient;
+    private launchDarklyClient: LDClient;
     constructor(
         private apiKey: string
     ) { 
