@@ -2,9 +2,11 @@
   "name": "launchdarkly-training",
   "version": "1.0.0",
   "description": "",
-  "scripts": {},
   "author": "",
   "license": "ISC",
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
   "dependencies": {
     "@types/express": "^4.17.6",
     "express": "^4.17.1",
