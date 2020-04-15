@@ -7,3 +7,6 @@
     - Try using a user named `blue`.
     - Try using a user named `green`.
     - Try playing with the feature flag configuration on launchdarkly
+
+
+checkout to the `complete` branch to see a working example
